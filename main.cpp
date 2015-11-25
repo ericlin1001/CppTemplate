@@ -3,6 +3,8 @@
 using namespace std;
 
 int main(){
+	int t=520;
+	Trace(m);
 	cout<<"Hello World."<<endl;
 	return 0;
 }
