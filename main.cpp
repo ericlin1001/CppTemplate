@@ -6,6 +6,9 @@
 #include<map>
 #include<algorithm>
 
+//Toggle include my utils.h
+#include "ericUtils.h"
+
 #define it(i,l) for(int i=0;i<l;i++) 
 #define its(i,b,l) for(int i=b;i<l;i++) 
 
@@ -35,6 +38,10 @@ int main(){
     cout<<"Hello World."<<endl;
 	int i=3;
 	Trace(i);
+	vector<int>a;
+	it(i,4)a.push_back(i*3);
+	Test(printArr(a));
+	cout<<endl;
 	Test(cout<<"hello"<<endl;);
 	ASSERT(i==3);
 	ASSERT(i!=3);

@@ -4,12 +4,17 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ASSERT	main.cpp	14;"	d	file:
-ASSERT	main.cpp	18;"	d	file:
-DEBUG	main.cpp	9;"	d	file:
-Test	main.cpp	13;"	d	file:
-Test	main.cpp	17;"	d	file:
-Trace	main.cpp	12;"	d	file:
-Trace	main.cpp	16;"	d	file:
-it	main.cpp	7;"	d	file:
+ASSERT	main.cpp	28;"	d	file:
+ASSERT	main.cpp	33;"	d	file:
+Cpp_Debug2	main.cpp	16;"	d	file:
+DEBUG	main.cpp	20;"	d	file:
+DEBUG_TAG	main.cpp	25;"	d	file:
+Test	main.cpp	27;"	d	file:
+Test	main.cpp	32;"	d	file:
+Trace	main.cpp	26;"	d	file:
+Trace	main.cpp	31;"	d	file:
+_ERIC_UTILS_H_	ericUtils.h	2;"	d
+it	main.cpp	12;"	d	file:
+its	main.cpp	13;"	d	file:
 main	main.cpp	/^int main(){$/;"	f	signature:()
+printArr	ericUtils.h	/^void printArr(const vector<T>& arr){$/;"	f	signature:(const vector<T>& arr)
