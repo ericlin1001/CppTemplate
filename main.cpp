@@ -5,10 +5,13 @@
 #include<set>
 #include<map>
 #include<algorithm>
-//Toggle Debug mode.
-#define Cpp_Debug2
+#include<values.h>
 
 #define it(i,l) for(int i=0;i<l;i++) 
+#define its(i,b,l) for(int i=b;i<l;i++) 
+
+//Toggle Debug mode.
+#define Cpp_Debug2
 //The following codes make debug mode active only when Makefile_Debug1 and Cpp_Debug2 is defined.
 #ifdef Makefile_Debug1
 #ifdef Cpp_Debug2
@@ -17,9 +20,10 @@
 #endif
 #ifdef DEBUG
 //Debug mode's code
-#define Trace(m) cout<<#m"=\""<<(m)<<"\""<<endl;
-#define Test(m) m;
-#define ASSERT(cond) if(!(cond)){cerr<<"ASSERT> "<<__FILE__<<"("<<__LINE__<<"): Conditon("#cond") fails!"<<endl;abort();}
+#define DEBUG_TAG "Debug> "
+#define Trace(m) cout<<DEBUG_TAG#m"=\""<<(m)<<"\""<<endl;
+#define Test(m) cout<<DEBUG_TAG;m;
+#define ASSERT(cond) if(!(cond)){cerr<<DEBUG_TAG"ASSERTION in "<<__FILE__<<"("<<__LINE__<<"): Conditon("#cond") fails!"<<endl;abort();}
 #else
 //Not-debug mode's code
 #define Trace(m) 
@@ -27,7 +31,6 @@
 #define ASSERT(cond) 
 #endif
 using namespace std;
-
 
 int main(){
     cout<<"Hello World."<<endl;
