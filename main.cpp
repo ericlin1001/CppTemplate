@@ -2,12 +2,29 @@
 #include<iostream>
 #include<cstring>
 #include<vector>
+#include<queue>
 #include<set>
-#include<map>
 #include<algorithm>
+#include<map>
 
-//Toggle include my utils.h
-#include "ericUtils.h"
+//C++11
+#if 1
+#include<unordered_map>
+#endif
+
+
+using namespace std;
+template<class T>
+void printArr(const T& arr){
+	cout<<"[";
+	int len=arr.size();
+	if(!arr.empty())cout<<arr[0];
+	for(int i=1;i<arr.size();i++){
+		cout<<", "<<arr[i];
+	}
+	cout<<"]";
+	cout<<endl;
+}
 
 #define it(i,l) for(int i=0;i<l;i++) 
 #define its(i,b,l) for(int i=b;i<l;i++) 
@@ -24,7 +41,7 @@
 //Debug mode's code
 #define DEBUG_TAG "Debug> "
 #define Trace(m) cout<<DEBUG_TAG#m"=\""<<(m)<<"\""<<endl;
-#define Test(m) cout<<DEBUG_TAG;m;
+#define Test(m) cout<<DEBUG_TAG#m<<":";m;
 #define ASSERT(cond) if(!(cond)){cerr<<DEBUG_TAG"ASSERTION in "<<__FILE__<<"("<<__LINE__<<"): Conditon("#cond") fails!"<<endl;abort();}
 #else
 //Not-debug mode's code
@@ -33,6 +50,10 @@
 #define ASSERT(cond) 
 #endif
 using namespace std;
+
+#ifdef DEBUG
+
+#endif
 
 int main(){
     cout<<"Hello World."<<endl;
