@@ -4,17 +4,71 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-ASSERT	main.cpp	28;"	d	file:
-ASSERT	main.cpp	33;"	d	file:
-Cpp_Debug2	main.cpp	16;"	d	file:
-DEBUG	main.cpp	20;"	d	file:
-DEBUG_TAG	main.cpp	25;"	d	file:
-Test	main.cpp	27;"	d	file:
-Test	main.cpp	32;"	d	file:
-Trace	main.cpp	26;"	d	file:
-Trace	main.cpp	31;"	d	file:
-_ERIC_UTILS_H_	ericUtils.h	2;"	d
-it	main.cpp	12;"	d	file:
-its	main.cpp	13;"	d	file:
+ASSERT	main.cpp	45;"	d	file:
+ASSERT	main.cpp	50;"	d	file:
+Cpp_Debug2	main.cpp	33;"	d	file:
+DEBUG	main.cpp	37;"	d	file:
+DEBUG_TAG	main.cpp	42;"	d	file:
+Entry	main.cpp	/^		Entry(){};$/;"	f	struct:HashMap::Entry	access:public	signature:()
+Entry	main.cpp	/^		Entry(Key k, Value v):key(k), value(v){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v)
+Entry	main.cpp	/^		Entry(Key k, Value v, Entry*n):key(k), value(v), next(n){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v, Entry*n)
+Entry	main.cpp	/^		Entry(Key k, Value v, Entry*n, int hk):key(k), value(v), next(n), hashKey(hk){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v, Entry*n, int hk)
+Entry	main.cpp	/^	struct Entry{$/;"	s	class:HashMap	file:	access:private
+HashMap	main.cpp	/^	HashMap(){init();}$/;"	f	class:HashMap	access:public	signature:()
+HashMap	main.cpp	/^class HashMap{$/;"	c	file:
+HashMap::Entry	main.cpp	/^	struct Entry{$/;"	s	class:HashMap	file:	access:private
+HashMap::Entry::Entry	main.cpp	/^		Entry(){};$/;"	f	struct:HashMap::Entry	access:public	signature:()
+HashMap::Entry::Entry	main.cpp	/^		Entry(Key k, Value v):key(k), value(v){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v)
+HashMap::Entry::Entry	main.cpp	/^		Entry(Key k, Value v, Entry*n):key(k), value(v), next(n){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v, Entry*n)
+HashMap::Entry::Entry	main.cpp	/^		Entry(Key k, Value v, Entry*n, int hk):key(k), value(v), next(n), hashKey(hk){}$/;"	f	struct:HashMap::Entry	access:public	signature:(Key k, Value v, Entry*n, int hk)
+HashMap::Entry::hashKey	main.cpp	/^		int hashKey;$/;"	m	struct:HashMap::Entry	file:	access:public
+HashMap::Entry::key	main.cpp	/^		Key key;$/;"	m	struct:HashMap::Entry	file:	access:public
+HashMap::Entry::next	main.cpp	/^		Entry *next=0;$/;"	m	struct:HashMap::Entry	file:	access:public
+HashMap::Entry::value	main.cpp	/^		Value value;$/;"	m	struct:HashMap::Entry	file:	access:public
+HashMap::HashMap	main.cpp	/^	HashMap(){init();}$/;"	f	class:HashMap	access:public	signature:()
+HashMap::Key	main.cpp	/^	typedef int Key;$/;"	t	class:HashMap	file:	access:private
+HashMap::Value	main.cpp	/^	typedef int Value;$/;"	t	class:HashMap	file:	access:private
+HashMap::addEntry	main.cpp	/^	void addEntry(int tableIndex, Key key, Value value, int hashKey){$/;"	f	class:HashMap	file:	access:private	signature:(int tableIndex, Key key, Value value, int hashKey)
+HashMap::capacity	main.cpp	/^	int capacity;$/;"	m	class:HashMap	file:	access:private
+HashMap::checkIfSize	main.cpp	/^	void checkIfSize(){$/;"	f	class:HashMap	file:	access:private	signature:()
+HashMap::get	main.cpp	/^	Value *get(const Key key)const {$/;"	f	class:HashMap	access:public	signature:(const Key key) const
+HashMap::getHash	main.cpp	/^	int getHash(Key key){$/;"	f	class:HashMap	file:	access:private	signature:(Key key)
+HashMap::indexForTable	main.cpp	/^	int indexForTable(int hash){$/;"	f	class:HashMap	file:	access:private	signature:(int hash)
+HashMap::init	main.cpp	/^	void init(int initCapacity=16, float initLoadFactor=2){$/;"	f	class:HashMap	file:	access:private	signature:(int initCapacity=16, float initLoadFactor=2)
+HashMap::loadFactor	main.cpp	/^	float loadFactor;$/;"	m	class:HashMap	file:	access:private
+HashMap::print	main.cpp	/^	void print(){$/;"	f	class:HashMap	access:public	signature:()
+HashMap::put	main.cpp	/^	void put(Key key, Value value){$/;"	f	class:HashMap	access:public	signature:(Key key, Value value)
+HashMap::rehashTable	main.cpp	/^	void rehashTable(int len){$/;"	f	class:HashMap	file:	access:private	signature:(int len)
+HashMap::size	main.cpp	/^	int size;$/;"	m	class:HashMap	file:	access:private
+HashMap::table	main.cpp	/^	vector<Entry *>table;$/;"	m	class:HashMap	file:	access:private
+HashMap::threshold	main.cpp	/^	int threshold;$/;"	m	class:HashMap	file:	access:private
+HashMap::~HashMap	main.cpp	/^	~HashMap(){$/;"	f	class:HashMap	access:public	signature:()
+Key	main.cpp	/^	typedef int Key;$/;"	t	class:HashMap	file:	access:private
+Test	main.cpp	44;"	d	file:
+Test	main.cpp	49;"	d	file:
+Trace	main.cpp	43;"	d	file:
+Trace	main.cpp	48;"	d	file:
+Value	main.cpp	/^	typedef int Value;$/;"	t	class:HashMap	file:	access:private
+addEntry	main.cpp	/^	void addEntry(int tableIndex, Key key, Value value, int hashKey){$/;"	f	class:HashMap	file:	access:private	signature:(int tableIndex, Key key, Value value, int hashKey)
+capacity	main.cpp	/^	int capacity;$/;"	m	class:HashMap	file:	access:private
+checkIfSize	main.cpp	/^	void checkIfSize(){$/;"	f	class:HashMap	file:	access:private	signature:()
+get	main.cpp	/^	Value *get(const Key key)const {$/;"	f	class:HashMap	access:public	signature:(const Key key) const
+getHash	main.cpp	/^	int getHash(Key key){$/;"	f	class:HashMap	file:	access:private	signature:(Key key)
+hashKey	main.cpp	/^		int hashKey;$/;"	m	struct:HashMap::Entry	file:	access:public
+indexForTable	main.cpp	/^	int indexForTable(int hash){$/;"	f	class:HashMap	file:	access:private	signature:(int hash)
+init	main.cpp	/^	void init(int initCapacity=16, float initLoadFactor=2){$/;"	f	class:HashMap	file:	access:private	signature:(int initCapacity=16, float initLoadFactor=2)
+it	main.cpp	29;"	d	file:
+its	main.cpp	30;"	d	file:
+key	main.cpp	/^		Key key;$/;"	m	struct:HashMap::Entry	file:	access:public
+loadFactor	main.cpp	/^	float loadFactor;$/;"	m	class:HashMap	file:	access:private
 main	main.cpp	/^int main(){$/;"	f	signature:()
-printArr	ericUtils.h	/^void printArr(const vector<T>& arr){$/;"	f	signature:(const vector<T>& arr)
+next	main.cpp	/^		Entry *next=0;$/;"	m	struct:HashMap::Entry	file:	access:public
+print	main.cpp	/^	void print(){$/;"	f	class:HashMap	access:public	signature:()
+printArr	main.cpp	/^void printArr(const T& arr){$/;"	f	signature:(const T& arr)
+put	main.cpp	/^	void put(Key key, Value value){$/;"	f	class:HashMap	access:public	signature:(Key key, Value value)
+rehashTable	main.cpp	/^	void rehashTable(int len){$/;"	f	class:HashMap	file:	access:private	signature:(int len)
+size	main.cpp	/^	int size;$/;"	m	class:HashMap	file:	access:private
+table	main.cpp	/^	vector<Entry *>table;$/;"	m	class:HashMap	file:	access:private
+threshold	main.cpp	/^	int threshold;$/;"	m	class:HashMap	file:	access:private
+value	main.cpp	/^		Value value;$/;"	m	struct:HashMap::Entry	file:	access:public
+~HashMap	main.cpp	/^	~HashMap(){$/;"	f	class:HashMap	access:public	signature:()
